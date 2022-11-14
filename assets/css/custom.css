@@ -1,0 +1,543 @@
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  }
+
+body{
+    font-family: 'Poppins';
+} */
+
+table{
+    width: 100% !important;
+}
+
+tr th {
+    border-bottom: 0 !important;
+}
+
+.admin-card{
+    background-color: white;
+    text-align: center;
+    height: 150px;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.admin-card:hover{
+    background-color: #8cd3c561;
+}
+
+.admin-card:first-child{
+    padding-top: 35px;
+}
+
+.admin-card:last-child{
+    font-weight: bold;
+}
+
+.admin-card .fa::before{
+    font-size: 45px !important;
+}
+
+.admin-card-container a{
+    color: unset;
+}
+.date_js{
+    background-color: white !important;
+}
+
+.modal-header{
+    padding: 15px 15px !important;
+}
+
+.site_title{
+    font-weight: bold;
+}
+
+.login_title{
+    margin-top: 150px;
+}
+
+.login_form_box{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-btn{
+    padding: 2px 7px !important;
+    margin: 2px;
+}
+
+.custom-btn + ul{
+    z-index: 100000 !important;
+}
+
+.custom-btn-top{
+    margin-top: 47px;
+}
+
+.selected{
+    background-color: #00000052;
+    color: white;
+}
+
+.btn-active{
+    color: white !important;
+}
+
+table{
+    width: 100% !important;
+}
+
+.select2{
+    width: 100% !important;
+}
+.select2-selection{
+    border-radius: 0 !important;
+}
+
+#date_reception, #date_emission, #echeance_reponse{
+    background-color: white;
+}
+
+.select2-container--default .select2-selection--multiple{
+    border-color: #e5e6e7 !important;
+}
+
+.custom-table-action{
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    bottom: 2px
+}
+
+.avancement_tache{
+    width: 20px;
+    height: 20px;
+}
+
+.tache_check_box_form, .pbloquant_check_box_form{
+    display: flex;
+    justify-content: space-around;
+}
+
+ /* Customize the label (the tache_checkbox) */
+ .tache_checkbox, .pbloquant_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .tache_checkbox input, .pbloquant_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .tache_checkmark, .pbloquant_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;    
+  }
+
+  .ea {
+    border: solid 2px #ed5565;
+    background-color: #eee;
+  }
+
+  .ec {
+    border: solid 2px #f8ac59;
+    background-color: #eee;
+  }
+
+  .te {
+    border: solid 2px #18a689;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .tache_checkbox:hover input ~ .tache_checkmark, .pbloquant_checkbox:hover input ~ .pbloquant_checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .tache_checkbox input:checked ~ .ea, .pbloquant_checkbox input:checked ~ .ea {
+    background-color: #ed5565;
+  }
+
+  .tache_checkbox input:checked ~ .ec {
+    background-color: #f8ac59;
+  }
+
+  .tache_checkbox input:checked ~ .te, .pbloquant_checkbox input:checked ~ .te {
+    background-color: #18a689;
+  }
+
+  .error_smg{
+    color: #dc3545;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .tache_checkmark:after, .pbloquant_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .tache_checkbox input:checked ~ .tache_checkmark:after, .pbloquant_checkbox input:checked ~ .pbloquant_checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .tache_checkbox .tache_checkmark:after, .pbloquant_checkbox .pbloquant_checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+
+  progress::-moz-progress-bar { 
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,
+    transparent 25%,transparent 50%,
+    rgba(255,255,255,.15) 50%,
+    rgba(255,255,255,.15) 75%,
+    transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ab394;
+ }
+
+ progress { 
+    border: none;
+    border-radius: 2px;
+ }
+
+ .priv{
+   display: block;
+ }
+
+ .seperate-left{
+  border-left: 1px solid #f5f4f4;
+ }
+
+ .list-group-item{
+  border: none;
+ }
+
+ .custom_ele{
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(240, 240, 240); 
+  /* background-color: #f3f3f4; */
+ }
+
+ .success-ele{
+  border-left: 3px solid #1ab394 !important;
+ }
+
+ .warning-ele{
+  border-left: 3px solid #f8ac59;
+ }
+
+ .info-ele{
+  border-left: 3px solid #1c84c6; 
+ }
+
+ .danger-ele{
+  border-left: 3px solid #ed5565;
+ }
+
+ .success-indicator{
+  color: #1ab394;
+  font-size: 17px;
+ }
+
+ .warning-indicator{
+  color: #f8ac59;
+  font-size: 17px;
+ }
+
+ .info-indicator{
+  color: #1c84c6;
+  font-size: 17px;
+ }
+
+ .danger-indicator{
+  color: #ed5565;
+  font-size: 17px;
+ }
+
+ #info_description{
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 10px;
+  border-top: 1px solid darkgrey;
+  padding-top: 10px;
+ }
+
+ .description_block{
+  max-height: 300px;
+  overflow: scroll;
+ }
+
+ .phase_block{
+  margin-top: 10px;
+  height: 75vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  max-width: 100%;
+ }
+
+ .phase_block_on_modal{
+  margin-top: 10px;
+  height: 60vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  max-width: 100%;
+ }
+
+ .cus-bg-success{
+  background-color: #1ab394;
+  color: white !important;
+ }
+
+ .cus-bg-info{
+  background-color: #1c84c6;
+  color: white !important;
+ }
+
+ .cus-bg-warning{
+  background-color: #f8ac59;
+  color: white !important;
+ }
+
+ .cus-bg-danger{
+  background-color: #ed5565;
+  color: white !important;
+ }
+
+ .cus-bg-success:hover{
+  background-color: #1ab394;
+  color: white !important;
+ }
+
+ .cus-bg-info:hover{
+  background-color: #1c84c6;
+  color: white !important;
+ }
+
+ .cus-bg-warning:hover{
+  background-color: #f8ac59;
+  color: white !important;
+ }
+
+ .cus-bg-danger:hover{
+  background-color: #ed5565;
+  color: white !important;
+ }
+
+ .nbr_ele:hover{
+  text-decoration: underline;
+ }
+
+ .fw-fs{
+  font-size: 11px;
+  margin-right: 3px;
+ }
+
+ .fw-date{
+  font-size: 15px;
+  margin-right: 3px;
+ }
+
+ .small-btn{
+  width: 28px;
+  height: 28px;
+ }
+
+ .kanban_action:hover{
+  color: rgb(40, 40, 40);
+ }
+
+ .autorisation_projet_view:hover{
+  color: rgb(40, 40, 40) !important;
+ }
+
+ .affecter_projet_view:hover{
+  color: rgb(40, 40, 40) !important;
+ }
+
+ .kanban-btn-data-access:hover{
+  color: rgb(18, 18, 18);
+  text-decoration: none;
+ }
+
+ .agile-list li.archive-element {
+  border-left: 3px solid #999999;
+}
+
+.label-archive, .badge-archive {
+  background-color: #d1dade;
+  color: #5e5e5e;
+}
+
+.kanban_list_container{
+  padding: 15px 13px 20px;
+}
+
+.kanban_list_container .ibox-content{
+  padding: 15px 13px 20px;
+}
+
+.kanban_bloc_size{
+  padding: 0px;
+}
+
+#kanban_bloc_archive{
+  display: none;
+}
+
+#tableUserTache_wrapper{
+  padding: 0 !important;
+}
+
+.kanban_data_modal{
+  max-height: 90vh;
+  padding-bottom: 10px;
+  overflow: scroll;
+}
+
+.kanban_dj_modal{
+  padding-bottom: 10px;
+  overflow: scroll;
+}
+
+.card_selected{
+  background-color: #e6e6e6 !important;
+}
+
+.activite-middle-block{
+  border-left: 3px solid #1ab39424;
+}
+
+.select_autre_container{
+  height: 60px;
+}
+
+.doc-card{
+  display: flex;
+}
+
+.doc-card-1{
+  padding: 10px;
+  border-right: 1px solid #e7eaec;
+}
+
+.doc-card-2{
+  padding-right: 15px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.doc-icon{
+  position: relative;
+  top: 30%;
+  font-size: 40px;
+}
+
+.no-border-t-b{
+  border-top: unset;
+  border-bottom: unset; 
+}
+
+.m-top{
+  margin-top: 200px;
+}
+
+.alert-warning-icon{
+  font-size: 25px;
+  color: #676a6c !important;
+}
+
+.ui-dialog{
+  border-radius: 5px;
+}
+
+#dialog-confirm{
+  padding-top: 20px;
+}
+
+.ui-widget-header{
+  background-color: #ed5565 !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.ui-dialog-buttonset{
+  width: 100%;
+}
+
+#confirm_message_container{
+  color: #676a6c !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: unset !important;
+  text-align: center !important;
+}
+
+.custom_hide{
+  display: none;
+}
+
+.agile-list div.info-element {
+  border-left: 3px solid #1a7bb9;
+  border-bottom: 1px solid #e7eaec;
+}
+
+.unlock_recette {
+  position: relative;
+  left: 27px;
+  top: 50px;
+}
+
+.unlock_depense {
+  position: relative;
+  left: 27px;
+  top: 50px;
+}
+
+.logo-name-custom{
+  font-size: 120px !important
+}
+
+.loginColumns-custom{
+  padding: unset;
+}
+ 
+
+
+

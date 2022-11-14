@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><?php echo $title;?></title>
+    
+    <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/font-awesome/css/font-awesome.css');?>" rel="stylesheet">
+
+    <link href="<?php echo base_url();?>assets/css/animate.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/custom.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/style_custom.css" rel="stylesheet">
+    <!-- <link href="<?php echo base_url();?>assets/css/custom.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>ass/ets/css/responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/cssbundle.css" rel="stylesheet"> -->
+    <style>
+        body{
+            background-image: url(<?php echo base_url('assets/img/bg_water.png') ?>)
+        }
+    </style>
+
+</head>
+
+<body class="gray-bg" style="background: url(<?php #echo base_url("assets/noukon/img/login.jpg") ?>);">
+    <div class="loginColumns animated fadeInDown">
+        
+        <div class="row">
+            <div class="col-md-12">
+                
+                    <?php if(isset($error)):?>
+                        <div class="alert alert-danger alert-dismissable" style="font-size: 12px;">
+                          <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                          <?php echo $error;?>
+                        </div>
+                    <?php endif;?> 
+                    <?php if($this->session->flashdata('error')):?>
+                        <div class="alert alert-danger alert-dismissable" style="font-size: 12px;">
+                          <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                          <?php echo $this->session->flashdata('error');?>
+                        </div>
+                    <?php endif;?>  
+                    <?php if($this->session->flashdata('success')):?>
+                        <div class="alert alert-success alert-dismissable" style="font-size: 12px;">
+                          <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                          <?php echo $this->session->flashdata('success');?>
+                        </div>
+                    <?php endif;?>
+
+            </div>
+            <div class="col-md-12 ibox-content" style="border-radius: 5px">
+                <div class="row ">
+                    <div class="col-md-12 text-center">
+                        <h2 style="; display: inline-block;padding-top: 15px" id="bienvenue_text_s" class="font-bold mt-0 text-center ">Connexion</h2> 
+                    </div>
+                </div><br>
+                <div class="row ">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="">
+
+                            <form class="m-t" role="form" action="<?php echo site_url('Admin') ?>"  method="post">
+                                <div class="form-group position-relative">
+                                    <label>Email</label>                                    
+
+                                    <?php 
+                                    
+                                    $data = array(
+                                            'name'          => 'email',
+                                            'type'          => 'text',
+                                            'class'         => 'form-control',
+                                            'placeholder'   => 'toto.abollo@jos.com',
+                                            'value'         => set_value('email'),
+                                            'required'         => 'required',
+                                    );
+
+                                    echo form_input($data); ?>                                  
+                                    
+                                    <?php if (form_error('email') != "" ): ?>
+                                        <div style="color: red"><b class="frm_erreur"><i class="fa fa-warning"></i> <?php echo form_error('email'); ?></b></div>
+                                    <?php endif ?>
+                                    
+                                </div>
+                                <div class="form-group input-icons position-relative">
+
+                                    <label>Mot de passe</label>
+                                        <?php 
+                                        $data = array(
+                                                'name'          => 'mdp',
+                                                'type'          => 'password',
+                                                'class'         => 'form-control ',
+                                                'placeholder'   => 'xxxxx',
+                                                'autocomplete'  => 'on',
+                                                'value'         => set_value('mdp'),
+                                                'required'         => 'required',
+                                        );
+
+                                        echo form_input($data); ?>
+                                        
+                                        <?php if (form_error('mdp') != "" ): ?>
+                                            <div style="color: red"><b class="frm_erreur"><i class="fa fa-warning"></i> <?php echo form_error('mdp'); ?></b></div>
+                                        <?php endif ?>
+                                      
+                                </div>
+                                <button type="submit" class="btn btn-primary block full-width m-b">Me connecter</button>
+                                <div style="margin-bottom: 15px;text-align: center;" >
+                                   <a style="" href="<?php echo site_url('Admin/mdpOublierPrive') ?>" >
+                                    <b class="text-center" style="color: #04752c">Mot de passe oublié ?</b>
+                                </a> 
+                                </div>
+
+                                <p class="text-muted text-center">
+                                    <small></small>
+                                    <!-- <small>Do not have an account?</small> -->
+                                </p>
+                            </form>
+                            <p class="m-t">
+                                <!-- <small>Inspinia we app framework base on Bootstrap 3 &copy; 2019</small> -->
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-2"></div>
+                
+                
+            </div>
+
+        </div>
+        <hr/>
+        <div class="row" style="margin-top: 20px">
+            <div class="col text-center">
+                <strong>Copyright</strong> Joscompagine &copy; 2020
+            </div>            
+        </div>
+    </div>
+
+</body>
+
+</html>
