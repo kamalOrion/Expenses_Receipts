@@ -2,7 +2,7 @@
 What is this web App
 ###################
 
-This is web app helps restaurant managers or owners to follow-up the expenses and receipts of the restaurant. It is responsives so it can be used on mobile phone. Every employee can have an account with a specifique task that can be set in the administration part of the app. Every sells are saved, and very expense must be validate. It helps the restaurant owner to to make a comparison between the app data and the financial state a the restaurant to make sure everything is fine.
+This is web app helps restaurant managers or owners to follow-up the expenses and receipts of the restaurant. It is responsives so it can be used on mobile phone. Every employee can have an account with a specifique task that can be set in the administration part of the app. Every sells are saved, and very expense must be validate. It helps the restaurant owner to make a comparison between the app data and the financial state a the restaurant to make sure everything is fine.
 *******************
 Release Information
 *******************
