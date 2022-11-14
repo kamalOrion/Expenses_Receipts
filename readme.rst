@@ -24,5 +24,4 @@ Admin connexion informations
 User : admin@admin.com
 password: 12345
 
-Thank you
-Made by Kamal
+Thank you / Made by Kamal
